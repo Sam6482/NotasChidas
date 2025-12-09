@@ -40,7 +40,7 @@ fun AddNoteScreen(
     var imagenUri by remember { mutableStateOf<String?>(null) }
     var mostrarOpciones by remember { mutableStateOf(false) }
 
-    // ✅ ARCHIVO REAL PARA LA CÁMARA
+
     val archivoFoto = remember {
         File(context.cacheDir, "foto_${System.currentTimeMillis()}.jpg")
     }
@@ -53,14 +53,14 @@ fun AddNoteScreen(
         )
     }
 
-    // ✅ GALERÍA
+
     val launcherGaleria = rememberLauncherForActivityResult(
         ActivityResultContracts.GetContent()
     ) { uri ->
         imagenUri = uri?.toString()
     }
 
-    // ✅ CÁMARA REAL
+
     val launcherCamara = rememberLauncherForActivityResult(
         ActivityResultContracts.TakePicture()
     ) { success ->
@@ -69,7 +69,7 @@ fun AddNoteScreen(
         }
     }
 
-    // ✅ PERMISO CÁMARA
+
     val permisoCamaraLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { permitido ->
