@@ -1,5 +1,6 @@
 package com.example.notaschidas.ui.screens
 
+import android.Manifest
 import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -25,7 +26,7 @@ import androidx.core.content.FileProvider
 import coil.compose.AsyncImage
 
 import java.io.File
-import java.util.jar.Manifest
+
 
 
 @Composable
