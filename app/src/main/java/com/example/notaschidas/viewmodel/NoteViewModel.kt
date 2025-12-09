@@ -1,5 +1,20 @@
 package com.example.notaschidas.viewmodel
 
+import android.content.Context
+import android.net.Uri
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.notaschidas.data.model.Note
+import com.example.notaschidas.data.network.RetrofitClient
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.launch
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.toRequestBody
+
+
+
 class NoteViewModel : ViewModel() {
 
     private val _notas = MutableStateFlow<List<Note>>(emptyList())
@@ -52,6 +67,8 @@ class NoteViewModel : ViewModel() {
             }
         }
     }
+
+    private fun Any.uriToFile(context: Context, it: Uri) {}
 
     fun borrar(id: Int) {
         viewModelScope.launch {
