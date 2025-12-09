@@ -97,12 +97,12 @@ fun AddNoteScreen(
                 .heightIn(200.dp, 600.dp)
         )
 
-        // ✅ BOTÓN QUE AHORA SÍ FUNCIONA
+
         Button(onClick = { mostrarOpciones = true }) {
             Text("Seleccionar Imagen")
         }
 
-        // ✅ PREVISUALIZACIÓN
+
         imagenUri?.let {
             AsyncImage(
                 model = it,
@@ -125,7 +125,7 @@ fun AddNoteScreen(
             Text("Guardar")
         }
 
-        // ✅ SELECTOR CÁMARA / GALERÍA
+
         if (mostrarOpciones) {
             androidx.compose.material3.AlertDialog(
                 onDismissRequest = { mostrarOpciones = false },
