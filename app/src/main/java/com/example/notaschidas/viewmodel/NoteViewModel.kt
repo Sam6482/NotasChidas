@@ -69,8 +69,6 @@ class NoteViewModel : ViewModel() {
         }
     }
 
-
-
     fun borrar(id: Int) {
         viewModelScope.launch {
             try {
