@@ -50,8 +50,9 @@ Este proyecto ha sido desarrollado siguiendo estrictamente los lineamientos de l
 [Coloca al menos 3 (investiga como agregarlas y se vean en GitHub)]
 
 | Pantalla de Inicio | Operación CRUD | Uso del Sensor |
-| :---: | :---: | :---: |
-| ![Inicio](url_imagen) | ![CRUD](url_imagen) | ![Sensor](url_imagen) |
+| :---: | :---: | :---:
+
+|![WhatsApp Image 2025-12-09 at 21 49 40 (2)](https://github.com/user-attachments/assets/0b2bbe27-9830-4a77-b417-92c8c2472e52)|![WhatsApp Image 2025-12-09 at 21 49 40 (https://github.com/user-attachments/assets/9fc4cfa7-96db-42d4-bcd0-1b63d1dfdbe1) | ![WhatsApp Image 2025-12-09 at 21 49 40 (1)](https://github.com/user-attachments/assets/908d5f9f-c1d8-473f-856b-7a0da493fb40)|
 
 ---
 
@@ -59,8 +60,6 @@ Este proyecto ha sido desarrollado siguiendo estrictamente los lineamientos de l
 
 El ejecutable firmado (.apk) se encuentra disponible en la sección de *Releases* de este repositorio.
 
-[Liga correctamente tu link de releases en la siguiente sección]
-
-1.  Ve a la sección "Releases" (o haz clic [aquí](link_a_tus_releases)).
+1.  Ve a la sección "Releases" (o haz clic [aquí](https://github.com/Sam6482/NotasChidas/releases/tag/App)).
 2.  Descarga el archivo .apk de la última versión.
 3.  Instálalo en tu dispositivo Android (asegúrate de permitir la instalación de orígenes desconocidos).
