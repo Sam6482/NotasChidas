@@ -11,6 +11,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.asRequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
 
 
@@ -95,7 +96,7 @@ class NoteViewModel : ViewModel() {
             var imagePart: MultipartBody.Part? = null
 
             imageUri?.let {
-                val file = com.example.notaschidas.uriToFile(context, it)
+                val file = com.example.notaschidas.utils.uriToFile(context, it)
                 val requestFile = file.asRequestBody("image/*".toMediaType())
 
                 imagePart = MultipartBody.Part.createFormData(
