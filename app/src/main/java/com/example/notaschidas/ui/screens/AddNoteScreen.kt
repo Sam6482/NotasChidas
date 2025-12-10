@@ -41,7 +41,7 @@ fun AddNoteScreen(
     var imagenUri by remember { mutableStateOf<String?>(null) }
     var mostrarOpciones by remember { mutableStateOf(false) }
 
-
+    //ARCHIVO REAL PARA LA CÁMARA
     val archivoFoto = remember {
         File(context.cacheDir, "foto_${System.currentTimeMillis()}.jpg")
     }
@@ -54,14 +54,14 @@ fun AddNoteScreen(
         )
     }
 
-
+    //GALERÍA
     val launcherGaleria = rememberLauncherForActivityResult(
         ActivityResultContracts.GetContent()
     ) { uri ->
         imagenUri = uri?.toString()
     }
 
-
+    //CÁMARA REAL
     val launcherCamara = rememberLauncherForActivityResult(
         ActivityResultContracts.TakePicture()
     ) { success ->
@@ -70,7 +70,7 @@ fun AddNoteScreen(
         }
     }
 
-
+    //PERMISO CÁMARA
     val permisoCamaraLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { permitido ->
@@ -98,12 +98,12 @@ fun AddNoteScreen(
                 .heightIn(200.dp, 600.dp)
         )
 
-
+        //BOTÓN QUE AHORA SÍ FUNCIONA
         Button(onClick = { mostrarOpciones = true }) {
             Text("Seleccionar Imagen")
         }
 
-
+        //PREVISUALIZACIÓN
         imagenUri?.let {
             AsyncImage(
                 model = it,
@@ -126,7 +126,7 @@ fun AddNoteScreen(
             Text("Guardar")
         }
 
-
+        //SELECTOR CÁMARA / GALERÍA
         if (mostrarOpciones) {
             androidx.compose.material3.AlertDialog(
                 onDismissRequest = { mostrarOpciones = false },
