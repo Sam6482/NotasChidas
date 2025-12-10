@@ -52,7 +52,8 @@ Este proyecto ha sido desarrollado siguiendo estrictamente los lineamientos de l
 | Pantalla de Inicio | Operación CRUD | Uso del Sensor |
 | :---: | :---: | :---:
 
-|![WhatsApp Image 2025-12-09 at 21 49 40 (2)](https://github.com/user-attachments/assets/0b2bbe27-9830-4a77-b417-92c8c2472e52)|![WhatsApp Image 2025-12-09 at 21 49 40 (https://github.com/user-attachments/assets/9fc4cfa7-96db-42d4-bcd0-1b63d1dfdbe1) | ![WhatsApp Image 2025-12-09 at 21 49 40 (1)](https://github.com/user-attachments/assets/908d5f9f-c1d8-473f-856b-7a0da493fb40)|
+|![WhatsApp Image 2025-12-09 at 21 49 40 (2)](https://github.com/user-attachments/assets/0b2bbe27-9830-4a77-b417-92c8c2472e52)|![WhatsApp Image 2025-12-09 at 21 49 40](https://github.com/user-attachments/assets/21754212-97e6-4590-b862-6bcbf13a6f9d)
+| | ![WhatsApp Image 2025-12-09 at 21 49 40 (1)](https://github.com/user-attachments/assets/908d5f9f-c1d8-473f-856b-7a0da493fb40)|
 
 ---
 
