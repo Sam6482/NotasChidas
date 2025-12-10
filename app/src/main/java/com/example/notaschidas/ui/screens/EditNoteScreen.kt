@@ -45,7 +45,7 @@ fun EditNoteScreen(
     var imagenUri by remember { mutableStateOf(nota.imageUri) }
     var mostrarOpciones by remember { mutableStateOf(false) }
 
-    //  ARCHIVO REAL PARA FOTO
+    //ARCHIVO REAL PARA FOTO
     val archivoFoto = remember {
         File(context.cacheDir, "foto_${System.currentTimeMillis()}.jpg")
     }
@@ -58,14 +58,14 @@ fun EditNoteScreen(
         )
     }
 
-    //  GALERÍA
+    //GALERÍA
     val launcherGaleria = rememberLauncherForActivityResult(
         ActivityResultContracts.GetContent()
     ) { uri ->
         imagenUri = uri?.toString()
     }
 
-    //  CÁMARA
+    //CÁMARA
     val launcherCamara = rememberLauncherForActivityResult(
         ActivityResultContracts.TakePicture()
     ) { success ->
@@ -74,7 +74,7 @@ fun EditNoteScreen(
         }
     }
 
-    //  PERMISO CÁMARA
+    //PERMISO CÁMARA
     val permisoCamaraLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { permitido ->
@@ -102,12 +102,12 @@ fun EditNoteScreen(
                 .heightIn(200.dp,600.dp)
         )
 
-        //  BOTÓN
+        //BOTÓN QUE AHORA SÍ FUNCIONA
         Button(onClick = { mostrarOpciones = true }) {
             Text("Cambiar Imagen")
         }
 
-        //  PREVISUALIZACIÓN
+        //PREVISUALIZACIÓN
         imagenUri?.let {
             AsyncImage(
                 model = it,
@@ -133,7 +133,7 @@ fun EditNoteScreen(
         }
     }
 
-    //  SELECTOR CÁMARA / GALERÍA
+    //SELECTOR CÁMARA / GALERÍA
     if (mostrarOpciones) {
         AlertDialog(
             onDismissRequest = { mostrarOpciones = false },

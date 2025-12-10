@@ -118,7 +118,7 @@ fun NoteScreen(
         }
     }
 
-    // ✅ CONFIRMACIÓN CON GIROSCOPIO
+    //CONFIRMACIÓN CON GIROSCOPIO
     if (mostrarConfirmacion && notaSeleccionada != null) {
         AlertDialog(
             onDismissRequest = { mostrarConfirmacion = false },
