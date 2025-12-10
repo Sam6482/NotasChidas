@@ -44,7 +44,7 @@ class NoteViewModel : ViewModel() {
                 var imagePart: MultipartBody.Part? = null
 
                 imageUri?.let {
-                    val file = mx.edu.utez.notaschidas.utils.uriToFile(context, it)
+                    val file = com.example.notaschidas.utils.uriToFile(context, it)
                     val requestFile = file.asRequestBody("image/*".toMediaType())
 
                     imagePart = MultipartBody.Part.createFormData(
@@ -68,7 +68,7 @@ class NoteViewModel : ViewModel() {
         }
     }
 
-    private fun Any.uriToFile(context: Context, it: Uri) {}
+
 
     fun borrar(id: Int) {
         viewModelScope.launch {
@@ -95,7 +95,7 @@ class NoteViewModel : ViewModel() {
             var imagePart: MultipartBody.Part? = null
 
             imageUri?.let {
-                val file = mx.edu.utez.notaschidas.utils.uriToFile(context, it)
+                val file = com.example.notaschidas.uriToFile(context, it)
                 val requestFile = file.asRequestBody("image/*".toMediaType())
 
                 imagePart = MultipartBody.Part.createFormData(
