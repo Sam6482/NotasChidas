@@ -22,7 +22,7 @@ interface ApiService {
     suspend fun updateNote(
         @Path("id") id: Int,
         @Part("titulo") titulo: RequestBody,
-        @Part("descripcion") descripcion: RequestBody,
+        @Part("descripcion") descripcion: RequestBody, // <-- Corregir: era "description"
         @Part image: MultipartBody.Part?
     ): Note
 
